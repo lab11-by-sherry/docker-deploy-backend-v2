@@ -9,7 +9,7 @@ public class GradeServiceImpl implements GradeService {
     public String getGrade(double score) {
         if (score > 60) {
             return "pass";
-        }
-        else return "dont pass";
-
+        } else
+            return "dont pass";
+    }
 }
