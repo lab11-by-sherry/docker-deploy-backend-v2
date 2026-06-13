@@ -1,0 +1,7 @@
+services:
+  backend-new:
+    image: mayxu111/234-deploylab-backend:latest
+    pull_policy: always
+    ports:
+      - "8083:8080" # 使用新端口 8083，和旧后端 8082 区分
+    restart: unless-stopped
